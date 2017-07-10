@@ -1,0 +1,48 @@
+{
+  "name": "hops-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "mocha --recursive",
+    "test:unit": "mocha test/unit",
+    "test:e2e": "mocha test/e2e",
+    "test:watch": "mocha -- -w",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hops-401/hops-server.git"
+  },
+  "author": "Keeley Hammond Chris Wallace Ivy Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hops-401/hops-server/issues"
+  },
+  "homepage": "https://github.com/Hops-401/hops-server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
+    "express": "^4.15.2",
+    "jsonwebtoken-promisified": "^1.0.3",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.7",
+    "morgan": "^1.8.1",
+    "querystring": "^0.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+    "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.3.0"
+  }
+}
